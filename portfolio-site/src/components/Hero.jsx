@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-dark to-gray-900">
+    <section id="home" className="min-h-screen flex items-center pt-28 md:pt-32 bg-gradient-to-b from-dark to-gray-900">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
