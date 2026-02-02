@@ -12,6 +12,7 @@ function App() {
     <div className="min-h-screen bg-dark">
       <Header />
       <main>
+        <main className="w-full"></main>
         <Hero />
         <About />
         <Skills />
