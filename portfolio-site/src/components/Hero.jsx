@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaCode, FaBrain, FaDatabase } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -62,51 +62,83 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right Content - Tech Stack Visualization */}
+          {/* Right Content - Profile Picture & Tech */}
           <div className="relative">
-            {/* Animated Background Elements */}
-            <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
-            
-            {/* Tech Stack Cards */}
-            <div className="relative glass-effect p-8 rounded-3xl">
-              <h3 className="text-2xl font-bold text-white mb-8 text-center">Tech Stack</h3>
+            {/* Profile Picture Container */}
+            <div className="relative mx-auto max-w-md mb-10">
+              {/* Profile Image */}
+              <div className="relative z-10">
+                <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
+                  <img 
+                    src="/images/profile.jpg" 
+                    alt="Abib Ahmed - Full Stack Developer"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "https://ui-avatars.com/api/?name=Abib+Ahmed&background=3B82F6&color=fff&size=400&bold=true";
+                    }}
+                  />
+                </div>
+                
+                {/* Decorative Elements */}
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-secondary/20 rounded-full blur-xl"></div>
+                
+                {/* Animated Rings */}
+                <div className="absolute inset-0 border-2 border-primary/30 rounded-full animate-ping"></div>
+                <div className="absolute inset-4 border-2 border-secondary/30 rounded-full"></div>
+              </div>
               
-              <div className="grid grid-cols-3 gap-6">
+              {/* Floating Tech Badges */}
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                <FaCode className="text-white text-xl" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+                <FaBrain className="text-white text-xl" />
+              </div>
+              <div className="absolute top-1/2 -right-8 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                <FaDatabase className="text-white text-lg" />
+              </div>
+            </div>
+            
+            {/* Tech Stack Summary */}
+            <div className="glass-effect p-6 rounded-2xl">
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Tech Expertise</h3>
+              
+              <div className="grid grid-cols-3 gap-4">
                 {[
-                  { name: 'React', color: 'bg-blue-500', icon: '⚛️' },
-                  { name: 'Node.js', color: 'bg-green-500', icon: '🟢' },
-                  { name: 'Python', color: 'bg-yellow-500', icon: '🐍' },
-                  { name: 'TensorFlow', color: 'bg-orange-500', icon: '🧠' },
-                  { name: 'MongoDB', color: 'bg-green-600', icon: '🍃' },
-                  { name: 'AWS', color: 'bg-yellow-600', icon: '☁️' },
-                ].map((tech) => (
-                  <div key={tech.name} className="text-center">
-                    <div className={`${tech.color} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-3`}>
-                      <span className="text-2xl">{tech.icon}</span>
+                  { name: 'Frontend', level: 90, color: 'from-blue-500 to-cyan-500' },
+                  { name: 'Backend', level: 85, color: 'from-green-500 to-emerald-500' },
+                  { name: 'AI/ML', level: 80, color: 'from-purple-500 to-pink-500' },
+                ].map((skill) => (
+                  <div key={skill.name} className="text-center">
+                    <div className={`h-2 bg-gray-700 rounded-full overflow-hidden mb-2`}>
+                      <div 
+                        className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
+                        style={{ width: `${skill.level}%` }}
+                      ></div>
                     </div>
-                    <div className="font-semibold text-white">{tech.name}</div>
+                    <div className="font-medium text-white text-sm">{skill.name}</div>
+                    <div className="text-gray-400 text-xs">{skill.level}%</div>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-8 pt-6 border-t border-gray-700">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Full-Stack</span>
-                  <div className="w-32 h-2 bg-gray-700 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary to-secondary w-4/5"></div>
-                  </div>
-                  <span className="text-primary font-bold">85%</span>
+              <div className="mt-4 pt-4 border-t border-gray-700 text-center">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 text-green-400 rounded-full">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">Open for opportunities</span>
                 </div>
               </div>
             </div>
             
             {/* Scroll Indicator */}
-            <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2">
+            <div className="absolute -bottom-24 left-1/2 transform -translate-x-1/2">
               <a href="#about" className="animate-bounce inline-block">
-                <div className="w-12 h-12 border-2 border-primary rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 border-2 border-primary rounded-full flex items-center justify-center bg-primary/10">
                   <FaArrowDown className="text-primary" />
                 </div>
+                <p className="text-gray-400 text-sm mt-2 text-center">Scroll to explore</p>
               </a>
             </div>
           </div>
