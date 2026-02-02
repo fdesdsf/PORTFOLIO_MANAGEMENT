@@ -17,7 +17,7 @@ const Header = () => {
       <div className="section-padding">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold gradient-text">
-            AHMED MOHAMED ABIB
+            AHMED ABIB
           </a>
 
           {/* Desktop Navigation */}

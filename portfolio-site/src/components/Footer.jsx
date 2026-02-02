@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold text-white mb-2">AHMED MOHAMED ABIB</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">AHMED ABIB</h3>
             <p className="text-gray-400">Full-Stack Developer & AI Enthusiast</p>
           </div>
           
@@ -21,9 +21,9 @@ const Footer = () => {
           </div>
           
           <div className="text-center md:text-right">
-            <p className="text-gray-400">
+            {/* <p className="text-gray-400">
               Built with <span className="text-red-500">❤️</span> and React
-            </p>
+            </p> */}
             <p className="text-gray-500 text-sm mt-1">
               © {currentYear} All rights reserved
             </p>

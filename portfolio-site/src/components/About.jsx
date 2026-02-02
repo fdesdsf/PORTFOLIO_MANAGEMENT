@@ -67,7 +67,7 @@ const About = () => {
                 { label: 'Experience', value: 'Multiple Projects Completed' },
                 { label: 'Learning Focus', value: 'Advanced ML Algorithms' },
                 { label: 'Collaboration', value: 'Open to Team Projects' },
-                { label: 'Location', value: 'Addis Ababa, Ethiopia' },
+                { label: 'Location', value: 'Nairobi, Kenya' },
                 { label: 'Availability', value: 'Open for Opportunities' },
               ].map((fact, index) => (
                 <div key={index} className="flex justify-between border-b border-gray-700 pb-4">
