@@ -24,9 +24,9 @@ const Contact = () => {
     setIsSubmitting(true);
     
     // Replace these with YOUR EmailJS credentials
-    const serviceID = 'YOUR_SERVICE_ID';      // Get from EmailJS dashboard
-    const templateID = 'YOUR_TEMPLATE_ID';    // Get from EmailJS dashboard  
-    const publicKey = 'YOUR_PUBLIC_KEY';      // Get from EmailJS dashboard
+    const serviceID = 'service_i3jadyk';      // Get from EmailJS dashboard
+    const templateID = 'template_8co3vh8';    // Get from EmailJS dashboard  
+    const publicKey = 'QYenuofxPIQp0lXMJ';      // Get from EmailJS dashboard
     
     emailjs.send(serviceID, templateID, {
       from_name: formData.name,
