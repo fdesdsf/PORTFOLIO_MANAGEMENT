@@ -70,7 +70,7 @@ const Hero = () => {
               <div className="relative z-10">
                 <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
                   <img 
-                    src="/images/profile.jpg" 
+                    src="/images/profile.png" 
                     alt="Abib Ahmed - Full Stack Developer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
