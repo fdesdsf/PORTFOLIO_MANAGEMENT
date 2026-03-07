@@ -152,9 +152,11 @@ const Hero = () => {
               {/* Floating Tech Badges - NOW VISIBLE */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-xl z-20">
                 <FaCode className="text-white text-xl" />
+                <span className="text-white text-sm font-semibold">React</span>
               </div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-xl z-20">
                 <FaBrain className="text-white text-xl" />
+                <span className="text-white text-sm font-semibold">AI/ML</span>
               </div>
               <div className="absolute top-1/2 -right-8 w-14 h-14 bg-purple-500 rounded-full flex items-center justify-center shadow-xl z-20">
                 <FaDatabase className="text-white text-lg" />
