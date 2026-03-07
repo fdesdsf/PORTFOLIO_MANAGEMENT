@@ -101,16 +101,16 @@ const Header = () => {
 
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo with Hover Effect */}
+          {/* Logo with Hover Effect - FIXED: Now visible on mobile */}
           <motion.a 
             href="#home" 
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2 sm:gap-3 group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <div className="relative">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <FaCode className="text-white text-xl" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <FaCode className="text-white text-lg sm:text-xl" />
               </div>
               <motion.div 
                 className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-0 group-hover:opacity-30 blur"
@@ -118,11 +118,13 @@ const Header = () => {
                 transition={{ repeat: Infinity, duration: 2 }}
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-white leading-tight">Abib Ahmed</h1>
-              <p className="text-xs text-gray-400 flex items-center gap-1">
-                <FaBrain className="text-secondary" size={10} />
-                Full-Stack Developer & AI Enthusiast
+            
+            {/* CHANGED: from 'hidden sm:block' to 'block' - now visible on all screens */}
+            <div className="block">
+              <h1 className="text-base sm:text-xl font-bold text-white leading-tight">Abib Ahmed</h1>
+              <p className="text-[10px] sm:text-xs text-gray-400 flex items-center gap-1">
+                <FaBrain className="text-secondary" size={8} />
+                <span className="whitespace-normal">Full-Stack Developer & AI Enthusiast</span>
               </p>
             </div>
           </motion.a>
