@@ -122,7 +122,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative -mt-16 lg:-mt-20"
+            className="relative lg:-mt-20"
           >
             {/* Profile Image Container */}
             <div className="relative max-w-md mx-auto">
@@ -150,7 +150,7 @@ const Hero = () => {
               </div>
               
               {/* Floating Tech Badges - NOW VISIBLE */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-xl z-20">
+              {/* <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-xl z-20">
                 <FaCode className="text-white text-xl" />
                 <span className="text-white text-sm font-semibold">React</span>
               </div>
@@ -160,7 +160,7 @@ const Hero = () => {
               </div>
               <div className="absolute top-1/2 -right-8 w-14 h-14 bg-purple-500 rounded-full flex items-center justify-center shadow-xl z-20">
                 <FaDatabase className="text-white text-lg" />
-              </div>
+              </div> */}
               
               {/* Projects Count Badge - NOW VISIBLE */}
               <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-primary to-secondary rounded-xl p-4 shadow-xl z-20">
