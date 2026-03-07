@@ -1,4 +1,6 @@
+// src/App.jsx
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,12 +14,19 @@ function App() {
     <div className="min-h-screen bg-dark">
       <Header />
       <main>
-        <main className="w-full"></main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+          </motion.div>
+        </AnimatePresence>
       </main>
       <Footer />
     </div>
