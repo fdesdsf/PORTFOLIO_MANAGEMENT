@@ -16,7 +16,7 @@ const About = () => {
     {
       degree: "BSc in Computer Science",
       institution: "University of Nairobi",
-      period: "2018 - 2022",
+      // period: "2018 - 2022",
       description: "Graduated with focus on Software Engineering, AI/ML, and Database Systems",
       achievements: [
         "First Class Honors",

@@ -29,7 +29,7 @@ const Skills = () => {
       shadow: 'shadow-blue-500/20',
       skills: [
         { name: 'React', level: 95, icon: <FaReact />, color: 'text-blue-400', category: 'frontend', years: 4 },
-        { name: 'Next.js', level: 90, icon: <SiNextdotjs />, color: 'text-white', category: 'frontend', years: 3 },
+        // { name: 'Next.js', level: 90, icon: <SiNextdotjs />, color: 'text-white', category: 'frontend', years: 3 },
         { name: 'JavaScript', level: 95, icon: <FaJs />, color: 'text-yellow-400', category: 'frontend', years: 5 },
         { name: 'TypeScript', level: 85, icon: <SiTypescript />, color: 'text-blue-500', category: 'frontend', years: 3 },
         { name: 'TailwindCSS', level: 90, icon: <SiTailwindcss />, color: 'text-cyan-400', category: 'frontend', years: 3 },
@@ -67,7 +67,7 @@ const Skills = () => {
         { name: 'Docker', level: 75, icon: <FaDocker />, color: 'text-blue-500', category: 'devops', years: 2 },
         { name: 'Kubernetes', level: 70, icon: <SiKubernetes />, color: 'text-blue-600', category: 'devops', years: 2 },
         { name: 'Git', level: 92, icon: <FaGit />, color: 'text-orange-500', category: 'devops', years: 5 },
-        { name: 'Jest', level: 80, icon: <SiJest />, color: 'text-red-500', category: 'devops', years: 3 },
+        // { name: 'Jest', level: 80, icon: <SiJest />, color: 'text-red-500', category: 'devops', years: 3 },
         { name: 'Databases', level: 85, icon: <FaDatabase />, color: 'text-gray-400', category: 'devops', years: 4 },
         { name: 'Figma', level: 75, icon: <FaFigma />, color: 'text-purple-400', category: 'design', years: 2 },
       ]
